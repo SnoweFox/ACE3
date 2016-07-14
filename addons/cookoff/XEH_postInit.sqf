@@ -1,4 +1,4 @@
 #include "script_component.hpp"
 
-// all vehicles, except persons and animals
-["AllVehicles", "handleDamage", FUNC(handleDamage), nil, ["Man"]] call CBA_fnc_addClassEventHandler;
+["Tank_F", "handleDamage", FUNC(handleDamageTank)] call CBA_fnc_addClassEventHandler;
+["Wheeled_APC_F", "handleDamage", FUNC(handleDamageTank)] call CBA_fnc_addClassEventHandler;
