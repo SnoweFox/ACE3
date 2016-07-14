@@ -1,15 +1,18 @@
 /*
- * Author: KoffeinFlummi
- *
+ * Author: KoffeinFlummi, commy2
  * Start a cook-off in the given vehicle.
  *
  * Arguments:
- * 0: Vehicle
+ * 0: Vehicle <Object>
  *
  * Return Value:
  * Boom.
+ *
+ * Public: No
  */
 #include "script_component.hpp"
+
+params ["_vehicle"];
 
 if !(local (_this select 0)) then {
     [_this, "AGM_Armour_fnc_cookOff", (_this select 0)] call AGM_Core_fnc_execRemoteFnc;
